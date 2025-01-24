@@ -1,0 +1,178 @@
+/* Gaya Umum */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.9;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background: #069b7b;
+    color: white;
+    padding: 100px 200px;
+}
+header .logo img {
+    width: 100px;
+}
+header .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+header .nav-links li {
+    display: inline;
+}
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-slider {
+    position: relative;
+    height: 400px;
+}
+.hero-slider .slide {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.hero-slider .btn {
+    padding: 10px 20px;
+    background: #057965;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 400px 400px;
+    background: #fff;
+}
+#portfolio h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.portfolio-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+}
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    display: inline;
+    margin-right: 10px;
+}
+.footer-social img {
+    width: 30px;
+    margin: 0 5px;
+}
+.large-section {
+    padding: 80px 20px; /* Padding besar */
+    font-size: 18px; /* Teks lebih besar */
+}
+/* Reset dasar */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Styling Header */
+header {
+    background-color: #00796b; /* Warna latar header */
+    padding: 5px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    max-height: 150px; /* Sesuaikan tinggi logo */
+}
+
+/* Navigasi */
+nav ul {
+    display: flex; /* Flexbox untuk membuat menu berjajar ke samping */
+    gap: 20px; /* Jarak antar item menu */
+}
+
+nav ul li {
+    margin: 0; /* Hilangkan margin default */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Warna teks menu */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Animasi saat hover */
+}
+
+nav ul li a:hover {
+    background-color: #005b4f; /* Warna latar saat hover */
+}
+
+nav ul li a.active {
+    background-color: #00473d; /* Warna menu yang sedang aktif */
+    color: #fff;
+}
